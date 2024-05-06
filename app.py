@@ -5,8 +5,8 @@ import pandas as pd
 import numpy as np
 import sklearn, pickle, os
 
-st.set_page_config("Diabeties Predictor", page_icon="syringe")
-st.title(':syringe: Diabeties Predictor')
+st.set_page_config("Diabetes Predictor", page_icon="syringe")
+st.title(':syringe: Diabetes Predictor')
 st.caption("The model has Accuracy: 80.52, Precision: {1: 0.86, 0: 0.76}, Recall: {1: 0.90, 0: 0.62}, F1 Score: {1: 0.86, 0: 0.68}, RUC-AOC Score: 75.87")
 st.divider()
 
@@ -91,9 +91,9 @@ if submit_btn:
                 prediction=predict(model,inp)
 
                 if prediction==0:
-                    st.write(f":green[Congratulations.] You don't have diabeties.")
+                    st.write(f":green[Congratulations.] You don't have diabetes.")
                 elif prediction==1:
-                    st.write(f"You have :red[diabeties.]")
+                    st.write(f"You have :red[diabetes.]")
                 else:
                     st.error(f"Prediction failed.")
 
