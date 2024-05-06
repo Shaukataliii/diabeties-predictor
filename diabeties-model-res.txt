@@ -1,0 +1,6 @@
+Model: KNN (test_size=0.1, random_state=30, n_neighbors=17)           
+Accuracy: 80.52           
+Precision: {1: 0.86, 0: 0.76}           
+Recall: {1: 0.90, 0: 0.62}           
+F1 Score: {1: 0.86, 0: 0.68}           
+RUC-AOC Score: 75.87
